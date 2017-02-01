@@ -4,7 +4,7 @@ Standards-Version: 3.9.2
 
 Package: opx-core
 Version: 1.0
-Maintainer: Dell <support@dell.com>
+Maintainer: Dell EMC <ops-dev@lists.openswitch.net>
 Depends: opx-logging,opx-cps,opx-pas,opx-nas-common,opx-nas-linux,opx-nas-daemon,opx-nas-interface,opx-nas-l2,opx-nas-l3,opx-nas-acl,opx-nas-qos,opx-tmpctl
 Architecture: all
 Description: Core (platform-independent) OPX implementation
