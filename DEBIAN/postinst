@@ -1,0 +1,42 @@
+#!/bin/bash
+# postinst script for opx-core
+#
+# Update the version information for opx-show-version
+#
+# see: dh_installdeb(1)
+
+set -e
+
+case "$1" in
+
+    configure)
+        # Update the version information
+        FILE="/etc/OPX-release-version"
+        OS_VERSION="2.3.0-dev"
+        BUILD_VERSION="0"
+        BUILD_DATE="2018-01-17T22:44:29+0000"
+        INSTALL_DATE=`date +'%Y-%m-%dT%H:%M:%S%z'`
+
+        if [ -f $FILE ]
+        then
+            sed -i "s/^OS_VERSION=.*$/OS_VERSION=${OS_VERSION}/" $FILE
+            sed -i "s/^BUILD_VERSION=.*$/BUILD_VERSION=${BUILD_VERSION}/" $FILE
+            sed -i "s/^BUILD_DATE=.*$/BUILD_DATE=${BUILD_DATE}/" $FILE
+            sed -i "s/^INSTALL_DATE=.*$/INSTALL_DATE=${INSTALL_DATE}/" $FILE
+        else
+            echo "Error unable to locate version file: $FILE"
+        fi
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+        exit 0;
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1;
+    ;;
+esac
+
+exit 0
+

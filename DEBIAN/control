@@ -1,9 +1,8 @@
+Package: opx-core
+Version: 2.2.1
 Section: misc
 Priority: optional
 Standards-Version: 3.9.2
-
-Package: opx-core
-Version: 2.2.0
 Maintainer: Dell EMC <ops-dev@lists.openswitch.net>
 Depends: bridge-utils,ebtables,python-systemd,opx-logging,opx-cps,opx-pas,opx-nas-common,opx-nas-linux,opx-nas-daemon,opx-nas-interface,opx-nas-l2,opx-nas-l3,opx-nas-acl,opx-nas-qos,opx-tmpctl,opx-tools,opx-alarm
 Architecture: all
