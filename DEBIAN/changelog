@@ -1,0 +1,6 @@
+opx-core (2.2.1+opx1) unstable; urgency=medium
+
+  * Initial release for 2.3.0-dev2.
+  * Includes postinst script to properly set OS version.
+
+ -- Dell EMC <ops-dev@lists.openswitch.net>  Thu, 15 Mar 2018 17:17:52 -0800
