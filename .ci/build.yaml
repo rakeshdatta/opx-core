@@ -1,0 +1,17 @@
+---
+platform: linux
+image_resource:
+  type: docker-image
+  source:
+    repository: opxhub/build
+inputs:
+- name: src
+outputs:
+- name: dist
+run:
+  path: bash
+  args:
+  - -ec
+  - |
+    dpkg-deb -b src dist
+
