@@ -12,9 +12,9 @@ case "$1" in
     configure)
         # Update the version information
         FILE="/etc/OPX-release-version"
-        OS_VERSION="2.3.1"
+        OS_VERSION="3.0.0-dev1"
         BUILD_VERSION="0"
-        BUILD_DATE="2018-05-11T15:38:29+0000"
+        BUILD_DATE="2018-06-18T15:38:29+0000"
         INSTALL_DATE=$(date +'%Y-%m-%dT%H:%M:%S%z')
 
         if [ -f $FILE ]
@@ -23,8 +23,6 @@ case "$1" in
             sed -i "s/^BUILD_VERSION=.*$/BUILD_VERSION=${BUILD_VERSION}/" $FILE
             sed -i "s/^BUILD_DATE=.*$/BUILD_DATE=${BUILD_DATE}/" $FILE
             sed -i "s/^INSTALL_DATE=.*$/INSTALL_DATE=${INSTALL_DATE}/" $FILE
-        else
-            echo "Error unable to locate version file: $FILE"
         fi
     ;;
 
