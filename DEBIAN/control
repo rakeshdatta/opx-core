@@ -1,5 +1,5 @@
 Package: opx-core
-Version: 3.0.0~dev2
+Version: 3.0.0~rc0
 Section: misc
 Priority: optional
 Standards-Version: 3.9.2
