@@ -1,3 +1,10 @@
+opx-core (3.0.0) unstable; urgency=medium
+
+  * Bump OS_VERSION to 3.0.0
+  * Update postinst script
+
+ -- Dell EMC <ops-dev@lists.openswitch.net>  Thu, 13 Aug 2018 15:36:00 -0800
+
 opx-core (3.0.0~rc0) unstable; urgency=medium
 
   * Bump OS_VERSION to 3.0.0-rc0
