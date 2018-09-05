@@ -1,0 +1,32 @@
+Source: opx-core
+Section: metapackages
+Priority: optional
+Maintainer: Dell EMC <ops-dev@lists.openswitch.net>
+Build-Depends-Indep: debhelper (>= 9)
+Standards-Version: 3.9.8
+Vcs-Browser: https://github.com/open-switch/opx-core
+Vcs-Git: https://github.com/open-switch/opx-core.git
+
+Package: opx-core
+Architecture: all
+Depends: ${misc:Depends},
+ bridge-utils,
+ ebtables,
+ opx-alarm,
+ opx-cps,
+ opx-logging,
+ opx-nas-acl,
+ opx-nas-common,
+ opx-nas-daemon,
+ opx-nas-interface,
+ opx-nas-l2,
+ opx-nas-l3,
+ opx-nas-linux,
+ opx-nas-qos,
+ opx-pas,
+ opx-tmpctl,
+ opx-tools,
+ python-opx-snmp,
+ python-systemd
+Description: Platform Independent OpenSwitch Packages
+ This metapackage will install packages required for running OpenSwitch.
