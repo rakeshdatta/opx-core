@@ -27,6 +27,7 @@ Depends: ${misc:Depends},
  opx-tmpctl,
  opx-tools,
  python-opx-snmp,
- python-systemd
+ python-systemd,
+ opx-system-utils
 Description: Platform Independent OpenSwitch Packages
  This metapackage will install packages required for running OpenSwitch.
