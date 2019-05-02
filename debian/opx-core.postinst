@@ -12,7 +12,7 @@ case "$1" in
     configure)
         # Update the version information
         FILE="/etc/OPX-release-version"
-        OS_VERSION="3.1.0"
+        OS_VERSION="unstable"
         INSTALL_DATE=$(date +'%Y-%m-%dT%H:%M:%S%z')
 
         if [ -f $FILE ]
