@@ -1,3 +1,10 @@
+opx-core (3.2.0) unstable; urgency=medium
+
+  * Bump OS_VERSION to 3.2.0
+  * Including new package libopx-nas-multicast1
+
+ -- Dell EMC <ops-dev@lists.openswitch.net>  Wed, 05 Jun 2019 15:36:00 -0800
+
 opx-core (3.1.0) unstable; urgency=medium
 
   * Bump OS_VERSION to 3.1.0
